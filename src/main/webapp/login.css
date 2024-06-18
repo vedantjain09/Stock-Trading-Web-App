@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    /* Set the entire background to white */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(125, 125, 237);
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    /* Make sure the header is positioned relatively */
+    z-index: 10;
+    /* Higher z-index to ensure it's on top of other content */
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.login-container {
+    color: rgb(110, 110, 110);
+    display: flex;
+    justify-content: center;
+    /* Center the child elements horizontally */
+    align-items: flex-start;
+    /* Align children to the top */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    gap: 20px;
+    /* Add some space between the login and signup forms */
+    margin-top: 0px;
+}
+
+.login,
+.signup {
+    flex-basis: calc(30% - 10px);
+    /* Adjust width taking into account the gap */
+    max-width: calc(50% - 10px);
+    /* Maximum width also considers the gap */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Include padding in the element's total width */
+    
+}
+
+h2 {
+    font-weight: 400;
+    text-align: left; /* Align titles to the left */
+    color: grey; /* Make title text grey */
+    margin-bottom: 0px; /* Increased space below the titles */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    background-color: rgb(105, 29, 18);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.submit-line {
+    border: 0; /* Remove the default border */
+    height: 1px; /* Set the height of the line */
+    background-color: rgb(222, 222, 222); /* Match the color of the "Submit" button */
+    width: calc(100%); /* Match the width of the button minus the padding */
+    margin-top: 20px; /* Center the line */
+    display: block; /* Ensure the hr is displayed as a block element */
+}

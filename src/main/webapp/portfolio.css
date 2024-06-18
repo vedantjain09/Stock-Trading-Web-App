@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(125, 125, 237);
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.money {
+	margin-top: 10px;
+	text-align: left;
+	margin-left: 25%;
+	font-weight: bold;
+}
+
+.stock-name {
+	background: rgb(245, 245, 245);
+}
+
+#account-summary {
+    text-align: center; /* This centers the text within the element */
+    width: 100%; /* Use full width to center content */
+    margin-bottom: 30px; /* Optional spacing between the summary and the stock list */
+  }
+  
+  /* If you don't already have a container for the 'My Portfolio' heading, create one */
+  #portfolio-header {
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 10px; /* Spacing between the header and the balance */
+  }
+  
+  /* Similarly, you can create a container for the balance if not already present */
+  #balance-container {
+    margin-bottom: 20px; /* Spacing between the balance and the stock list */
+  }
+  
+  /* Center the content within the stock positions container */
+  #stock-positions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+h3 {
+	text-align: left;
+}
+
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the stock list */
+#stock-positions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for each stock item */
+.stock-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    /* You may adjust the width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the company name and ticker */
+.stock-item h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Styles for the stock information within each box */
+.stock-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style for labels and inputs */
+.trade-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.quantity-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quantity-input {
+  width: 80px; /* Smaller width for the quantity input */
+  margin-left: 10px; /* Spacing after the label */
+}
+
+.radio-options {
+  display: flex;
+  justify-content: start;
+  gap: 10px; /* Add space between the radio buttons */
+}
+
+.trade-inputs {
+	background-color: rgb(245, 245, 245);
+	
+}
+
+/* Style for the submit button */
+.trade-inputs button {
+  padding: 5px 20px;
+  width: 20%;
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);
+  color: black;
+  border: 2px solid black;
+  border-radius: 0px;
+  display: block; /* Make it a block element to fill the width */
+  align-self: center; /* Center button in the trade inputs container */
+}
+
+/* Colors for price change */
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+/* Additional responsive adjustments as needed */
+@media (min-width: 768px) {
+    .stock-item {
+        width: 50%;
+        /* Adjust width for larger screens */
+    }
+}
+
+
+

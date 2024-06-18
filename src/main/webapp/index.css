@@ -1,0 +1,267 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(125, 125, 237);
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.search-container h2 { /* Update this selector to target the actual title element */
+    font-weight: 540; /* Debold the title */
+    font-size: 40px; /* Increase the font size */
+    margin-bottom: 30px; /* Adjust as needed for spacing */
+  }
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-box input {
+    padding: 5px; /* Decrease padding to make it shorter */
+    font-size: 16px;
+    border: 2px solid rgb(125, 125, 237);
+    border-radius: 4px 0 0 4px;
+    width: 300px; /* Increase width as needed */
+  }
+  
+  /* Adjust the search button, adding margin for the gap */
+  .search-box button {
+    padding: 5px 15px; /* Adjust padding to match the input height */
+    font-size: 16px;
+    background-color: rgb(125, 125, 237);
+    color: white;
+    border: 2px solid rgb(125, 125, 237);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    margin-left: 2px; /* Add a small gap between the input and the button */
+  }
+  
+
+
+#home-page-container {
+    padding: 20px;
+    max-width: 1500px; /* Increase max-width for a wider box */
+    margin-top: -10px; /* Reduce margin-top to bring the box closer to the header */
+    margin-left: auto;
+    margin-right: auto;
+    border: none; /* Remove the border as specified before */
+  }
+  
+.stock-content {
+    text-align: center;
+}
+
+
+.horizontal-line {
+width: 50%; /* Half the width of its container */
+margin-left: auto;
+margin-right: auto;
+border-top: 1px solid #ccc; /* Light gray line */
+margin-top: 10px; /* Spacing above the line */
+margin-bottom: 10px; /* Spacing below the line */
+}
+  
+/* Company info styles */
+.company-info-title,
+.summary-title {
+    text-align: center;
+}
+  
+.info-title {
+    font-weight: bold;
+    text-align: left; /* Align the text to the left */
+    margin-right: auto; /* This will push the block to the left */
+}
+
+.info {
+    text-align: left;
+    margin-left: 25%;
+}
+
+
+#stock-details-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0px;
+  /* display: flex; */
+  /* /* flex-wrap: wrap; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px; */
+}
+
+.buysell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.company-pricing {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.company-summary, 
+.company-info {
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#stock-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#stock-exchange {
+  font-weight: normal;
+}
+
+#stock-market {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#stock-buy-section {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#stock-quantity {
+  width: 80px;
+  padding: 10px;
+}
+
+#stock-buy-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#stock-current-price {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#stock-change {
+  color: #28a745;
+  font-size: 1.5rem;
+}
+
+#stock-date-time {
+  color: #6c757d;
+}
+
+.company-summary {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.company-info {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.stock-summary {
+	font-weight: bold;
+}
+
+#stock-company-info a {
+  color: #007bff;
+}
+
+#stock-company-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .company-pricing {
+    flex-direction: column;
+  }
+
+  #stock-current-price,
+  #stock-change,
+  #stock-date-time {
+    margin-bottom: 10px;
+  }
+}
+
+
+.price-up {
+  color: #28a745; /* Green for price up */
+}
+
+.price-down {
+  color: #dc3545; /* Red for price down */
+}
+
+.company-pricing p {
+  margin: 4px 0;
+}
+
+#market-status {
+  
+  text-align: center;
+}
+
+.info-stock {
+    text-align: left;
+}
+
+#stock-buy-section {
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    align-items: flex-start; /* Aligns children to the start of the flex direction */
+    gap: 10px; /* Adds space between flex items */
+}
+
+.price {
+	font-weight: 600;
+}
+

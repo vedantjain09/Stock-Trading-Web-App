@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JoesStocks</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">JoesStocks</div>
+      <div class="nav-links">
+        <a href="index.html">Home / Search</a>
+        <a id="portfolioLink" href="portfolio.html" style="display: none;">Portfolio</a>
+        <a href="login.html">Login / Sign Up</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="stock-details-container" style="display: none"></div>
+
+  <div id="home-page-container"></div>
+    <div class="search-container">
+      <h2>SEARCH STOCKS</h2>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search by ticker...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

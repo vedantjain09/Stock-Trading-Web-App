@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joe's Stocks - My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">JoesStocks</div>
+      <div class="nav-links">
+        <a href="index.html">Home / Search</a>
+        <a id="portfolioLink" href="portfolio.html">Portfolio</a>
+        <a href="login.html">Logout</a> <!-- Changed to Logout -->
+      </div>
+    </div>
+  </header>
+  
+  <main id="portfolio">
+  		<div class="money">
+			<h2>My Portfolio</h2>
+			<p>Cash Balance: $<span id="cashBalance">0.00</span></p>
+			<p>Total Account Value: $<span id="accountValue">0.00</span></p>
+  		</div>
+  		
+        <section id="account-summary">
+
+            <div id="stock-positions">
+                <!-- Stock positions will be added here -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="portfolio.js"></script>
+</body>
+</html>
